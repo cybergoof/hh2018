@@ -29,13 +29,13 @@ layout: compress
                     {% for objective in site.objectives %}
                     <ul>
                         <li class="wow fadeInLeft" data-wow-duration="1.5s">
-                            <a class="zoombtn" href="{{site.baseurl}}/{{ objective.url }}">Objective
+                            <a class="zoombtn" href="{{site.baseurl}}{{ objective.url }}">Objective
                                 {{objective.number}}
                                 : {{ objective.title }}</a>
                             <img src="{{ site.baseurl }}/assets/img/objectives/{{ objective.number }}/question.png" alt="{{ objective.question }}">
                             <p>ANSWER: {{ objective.answer }}</p>
 
-                            <a href="{{ site.baseurl }}/{{ objective.url }}" class="btn zoombtn">Read More</a>
+                            <a href="{{ site.baseurl }}{{ objective.url }}" class="btn zoombtn">Read More</a>
                         </li>
                     </ul>
                     {% endfor %}
