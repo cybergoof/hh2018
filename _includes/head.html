@@ -29,7 +29,7 @@ endif %}
 endif %}
 <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
 <meta property="og:site_name" content="{{ site.title }}">
-<meta property="og:image" content="{{ site.url }}/{{ site.logo }}">
+<meta property="og:image" content="{{ site.baseurl }}/{{ site.logo }}">
 {% if site.google.verify %}
 <!-- Webmaster Tools verfication -->
 <meta name="google-site-verification" content="{{ site.google.verify }}">{% endif %}
@@ -57,7 +57,8 @@ remove:'index.html' | strip_slash }}{% endif %}{% endcapture %}
 <!-- Background Image -->
 {% if site.background %}
 {% capture background %}{{ site.background }}{% endcapture %}
-{% unless background contains 'http://' or background contains 'https://' %}{% capture background %}{{ site.url }}/{{
+{% unless background contains 'http://' or background contains 'https://' %}{% capture background %}{{ site.baseurl
+}}/{{
 background }}{% endcapture %}{% endunless %}
 <style type="text/css">
     body {
