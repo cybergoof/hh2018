@@ -25,7 +25,7 @@ narrative: "3"
 I first downloaded the link.
 
 <figure>
-	<img src="/assets/img/objectives/4/1.png">
+	<img src="{{site.baseurl}}/assets/img/objectives/4/1.png">
 	<figcaption>The webpage for the objective</figcaption>
 </figure>
 
@@ -34,14 +34,14 @@ I first downloaded the link.
 Then, I run TruffleHog on it
 
 <figure>
-	<img src="/assets/img/objectives/4/2.png">
+	<img src="{{site.baseurl}}/assets/img/objectives/4/2.png">
 	<figcaption>The webpage for the objective</figcaption>
 </figure>
 
 I opened the text file, and I search for the password
 
 <figure>
-	<img src="/assets/img/objectives/4/3.png">
+	<img src="{{site.baseurl}}/assets/img/objectives/4/3.png">
 	<figcaption>The webpage for the objective</figcaption>
 </figure>
 

@@ -22,14 +22,14 @@ answer: "Fancy Beaver "
 
 The link takes us to the career website.
 <figure>
-	<img src="/assets/img/objectives/7/1.png">
+	<img src="{{site.baseurl}}/assets/img/objectives/7/1.png">
 	<figcaption>Career Site</figcaption>
 </figure>
 
 Entering a dummy CSV, I find this error message
 
 <figure>
-	<img src="/assets/img/objectives/7/2.png">
+	<img src="{{site.baseurl}}/assets/img/objectives/7/2.png">
 	<figcaption>Error Message</figcaption>
 </figure>
 
@@ -40,15 +40,15 @@ I crafted a command that would copy the file to the publically accessible area:
 ```
 
 <figure>
-	<img src="/assets/img/objectives/7/3.png">
+	<img src="{{site.baseurl}}/assets/img/objectives/7/3.png">
 	<figcaption>Error Message</figcaption>
 </figure>
 
 It shows the Job Applicant who starts with "k"
 <figure>
-	<img src="/assets/img/objectives/7/4.png">
+	<img src="{{site.baseurl}}/assets/img/objectives/7/4.png">
 </figure>
 <figure>
-	<img src="/assets/img/objectives/7/5.png">
+	<img src="{{site.baseurl}}/assets/img/objectives/7/5.png">
 	<figcaption>The Applicant</figcaption>
 </figure>

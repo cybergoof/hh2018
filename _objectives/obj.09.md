@@ -21,7 +21,7 @@ answer: "Rachmaninoff"
 
 ### Catch the Malware
 <figure>
-	<img src="/assets/img/objectives/9/9.1.png">
+	<img src="{{site.baseurl}}/assets/img/objectives/9/9.1.png">
 	</figure>
 Need to help build a snort filter to identify the malware that is plaguing Santa's Castlce.  We know from Shinny, that the [powershell talk](https://www.youtube.com/watch?v=wd12XRq2DNk) is important.
 
@@ -32,7 +32,7 @@ https://docker.kringlecon.com/?challenge=snort
 
 
 <figure>
-	<img src="/assets/img/objectives/9/1.png">
+	<img src="{{site.baseurl}}/assets/img/objectives/9/1.png">
 	<figcaption>Snort Challenge</figcaption>
 </figure>
 
@@ -74,7 +74,7 @@ HINT:
 Looking at the Snort webpage, I get a directory listing of pcap that I can download and view in wireshark.  Nice touch!
 
 <figure>
-	<img src="/assets/img/objectives/9/2.png">
+	<img src="{{site.baseurl}}/assets/img/objectives/9/2.png">
 	<figcaption>Snort Sensor PCAP Files</figcaption>
 </figure>
 
@@ -96,7 +96,7 @@ alert tcp any any -> any any (msg:"The DNS"; content: "77616E6E61636F6F6B69652E6
 {% endhighlight %}
 
 <figure>
-	<img src="/assets/img/objectives/9/3.png">
+	<img src="{{site.baseurl}}/assets/img/objectives/9/3.png">
 	<figcaption>Snort Success</figcaption>
 </figure>
 
@@ -135,7 +135,7 @@ The response is alot of text.  I'm guessing that we are looking at a DNS covert 
 
 ### Identify the Domain
 <figure>
-	<img src="/assets/img/objectives/9/9.2.png">
+	<img src="{{site.baseurl}}/assets/img/objectives/9/9.2.png">
 	</figure>
 Albaster gives a hint to download and analyze a Word document.  The word document has a powershell malware in it.  
 The malware is communciating with a server on the domain: 
@@ -143,12 +143,12 @@ The malware is communciating with a server on the domain:
 erohetfanu.com
 ```
 <figure>
-	<img src="/assets/img/objectives/9/9.1.1.png">
+	<img src="{{site.baseurl}}/assets/img/objectives/9/9.1.1.png">
 </figure>
 
 ### Stop the Malware
 <figure>
-	<img src="/assets/img/objectives/9/9.3.png">
+	<img src="{{site.baseurl}}/assets/img/objectives/9/9.3.png">
 	</figure>
 In the powershell is using a kill switch to determine if it needs to stop running.  If it can't communicate with it, it does a return and stops executing 
 ```
@@ -157,7 +157,7 @@ yippeekiyaa.aaay
 
 ### Discover Alabaster's Password
 <figure>
-	<img src="/assets/img/objectives/9/9.4.png">
+	<img src="{{site.baseurl}}/assets/img/objectives/9/9.4.png">
 </figure>
 Walking through the code, I was able to see that it is creating a file encryption key, then encrypting that with a public key. The malware retrieves that 
 

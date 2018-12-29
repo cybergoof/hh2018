@@ -25,6 +25,6 @@ For this challenge, I was playing with my kid.  He started guessing and solved i
 Can't beat that.
 
 <figure>
-	<img src="/assets/img/objectives/3/1.png">
+	<img src="{{site.baseurl}}/assets/img/objectives/3/1.png">
 	<figcaption>Hacker Kids</figcaption>
 </figure>

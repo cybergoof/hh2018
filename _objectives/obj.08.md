@@ -19,7 +19,7 @@ answer: "Mary Had a Little Lamb"
 
 The website is a network packet analyzer website.  I created an account and logged in
 <figure>
-	<img src="/assets/img/objectives/8/1.png">
+	<img src="{{site.baseurl}}/assets/img/objectives/8/1.png">
 	<figcaption>Packalyzer Login</figcaption>
 </figure>
 
@@ -27,13 +27,13 @@ After logging in, you can SNIFF TRAFFIC which will sniff 20 seconds of network t
 
 
 <figure>
-	<img src="/assets/img/objectives/8/2.png">
+	<img src="{{site.baseurl}}/assets/img/objectives/8/2.png">
 	<figcaption>Packalyzer Main Display</figcaption>
 </figure>
 From the hint, we know that we need to look for HTML comments to find a dev file.   The HTML comments describe an app.js file.
 
 <figure>
-	<img src="/assets/img/objectives/8/3.png">
+	<img src="{{site.baseurl}}/assets/img/objectives/8/3.png">
 	<figcaption>HTML Comments</figcaption>
 </figure>
 

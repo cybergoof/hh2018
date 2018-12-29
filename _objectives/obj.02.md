@@ -21,14 +21,14 @@ answer: "John McClane"
 First, I visted the webpage that the objective described.  It was a Call For Papers for KringleCon
 
 <figure>
-	<img src="/assets/img/objectives/2/1.png">
+	<img src="{{site.baseurl}}/assets/img/objectives/2/1.png">
 	<figcaption>The webpage for the objective</figcaption>
 </figure>
 
 Since the title of the objective was "Directory Browsing", I decided to see if I could see any files in the same directory.
 
 <figure>
-	<img src="/assets/img/objectives/2/2.png">
+	<img src="{{site.baseurl}}/assets/img/objectives/2/2.png">
 	<figcaption>The webpage source shows that there is a file at cfp.kringlecastle.com/cfp/cfp.html</figcaption>
 </figure>
 

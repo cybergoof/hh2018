@@ -25,26 +25,26 @@ I downloaded an image put out by the incredible Jeff McJunkin
 
 After changing the base memory to 8GB and setting the OS to Debian x64, I was able to log in
 <figure>
-	<img src="/assets/img/objectives/8/14.png">
+	<img src="{{site.baseurl}}/assets/img/objectives/8/14.png">
 	<figcaption>Found Secret Capture</figcaption>
 </figure>
 
 Bloodhound is already installed.  I opened it up and get a diagram that shows users to the domain
 <figure>
-	<img src="/assets/img/objectives/5/2.png">
+	<img src="{{site.baseurl}}/assets/img/objectives/5/2.png">
 	<figcaption>Starting Bloodhount</figcaption>
 </figure>
 
 
 I select the "Shortest Path" and get this image 
 <figure>
-	<img src="/assets/img/objectives/5/3.png">
+	<img src="{{site.baseurl}}/assets/img/objectives/5/3.png">
 	<figcaption>Shortest Path</figcaption>
 </figure>
 
 But, the right query is "Shortest Paths to Domain Admins from Kerberoastable Users"
 <figure>
-	<img src="/assets/img/objectives/5/4.png">
+	<img src="{{site.baseurl}}/assets/img/objectives/5/4.png">
 	<figcaption>Shortest Path to Domain Admins</figcaption>
 </figure>
 
@@ -66,7 +66,7 @@ JBETAK00084@AD.KRINGLECASTLE.COM
 
 Based on the hint that RDP would not be a good path, I eliminated the ones that needed RDP.  I reran the query and retrieved these
 <figure>
-	<img src="/assets/img/objectives/5/5.png">
+	<img src="{{site.baseurl}}/assets/img/objectives/5/5.png">
 	<figcaption>Filter RDP</figcaption>
 </figure>
 

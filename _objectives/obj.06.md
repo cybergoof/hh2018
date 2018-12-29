@@ -26,7 +26,7 @@ I first downloaded the image to Alabaster's Badge.
 
 The hint was to get Alabaster's badge, so I downloaded it from the provided link.
 <figure>
-	<img src="/assets/img/objectives/6/1.png">
+	<img src="{{site.baseurl}}/assets/img/objectives/6/1.png">
 	<figcaption>Alabaster</figcaption>
 </figure>
 
@@ -34,7 +34,7 @@ I think I need to decode his badge, then makfe my own qr code
 
 First, I needed to decode the QR Code on Alabaster's badge.
 <figure>
-	<img src="/assets/img/objectives/6/2.png">
+	<img src="{{site.baseurl}}/assets/img/objectives/6/2.png">
 	<figcaption>zxing.com</figcaption>
 </figure>
 
@@ -62,7 +62,7 @@ I therefore needed to create a SQL Injection that would return an Enabled user.
 1}' or ENABLED=1 LIMIT 1; #
 ```
 <figure>
-	<img src="/assets/img/objectives/6/3.png">
+	<img src="{{site.baseurl}}/assets/img/objectives/6/3.png">
 	<figcaption>Working QR Code</figcaption>
 </figure>
 
