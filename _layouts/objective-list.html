@@ -21,7 +21,7 @@ layout: compress
             <div class="content">
                 <div class="s-title">
                     <h1>{{ page.title }}</h1>
-                    <a class="btn zoombtn" href="{{site.url}}">
+                    <a class="btn zoombtn" href="{{site.baseurl}}">
                         <i class="fa fa-home"></i>
                     </a>
                 </div>
@@ -29,12 +29,13 @@ layout: compress
                     {% for objective in site.objectives %}
                     <ul>
                         <li class="wow fadeInLeft" data-wow-duration="1.5s">
-                            <a class="zoombtn" href="{{ objective.url }}">Objective {{objective.number}}
+                            <a class="zoombtn" href="{{site.baseurl}}/{{ objective.url }}">Objective
+                                {{objective.number}}
                                 : {{ objective.title }}</a>
-                            <img src="{{ site.url }}/assets/img/objectives/{{ objective.number }}/question.png" alt="{{ objective.question }}">
+                            <img src="{{ site.baseurl }}/assets/img/objectives/{{ objective.number }}/question.png" alt="{{ objective.question }}">
                             <p>ANSWER: {{ objective.answer }}</p>
 
-                            <a href="{{ objective.url }}" class="btn zoombtn">Read More</a>
+                            <a href="{{ site.baseurl }}/{{ objective.url }}" class="btn zoombtn">Read More</a>
                         </li>
                     </ul>
                     {% endfor %}
