@@ -23,7 +23,7 @@ In the restrictive shell, I determind that ```import``` was not allowed, but ```
 So, I broke up the import and the execute commands using eval
 
 <figure>
-	<img src="/assets/img/elves/sugarplum/1.png">
+	<img src="{{site.baseurl}}/assets/img/elves/sugarplum/1.png">
 	<figcaption>Running the escape</figcaption>
 </figure>
 

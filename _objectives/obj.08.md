@@ -41,13 +41,13 @@ From the hint, we know that we need to look for HTML comments to find a dev file
 
 That file was accessible from the browser
 <figure>
-	<img src="/assets/img/objectives/8/4.png">
+	<img src="{{site.baseurl}}/assets/img/objectives/8/4.png">
 	<figcaption>UPDATE</figcaption>
 </figure>
 
 Opening that file, there were two areas of interest.  First, there is an SSLKEYLOGFILE turned on.  This is a file that the server will create that stores SSH Keys.   We can use these keys to decrypt the SSL Traffic in Wireshark per Chris Davis' talk (https://www.youtube.com/watch?v=YHOnxlQ6zec)
 <figure>
-	<img src="/assets/img/objectives/8/5.png">
+	<img src="{{site.baseurl}}/assets/img/objectives/8/5.png">
 	<figcaption>UPDATE</figcaption>
 </figure>
 The location of the file is the directory
@@ -60,7 +60,7 @@ process.env.SSLKEYLOGFILE - likely the file name
 
 I needed to extract these two variables.  I found this in the code:
 <figure>
-	<img src="/assets/img/objectives/8/6.png">
+	<img src="{{site.baseurl}}/assets/img/objectives/8/6.png">
 	<figcaption>UPDATE</figcaption>
 </figure>
 
@@ -70,30 +70,30 @@ I found that if I requested a URL where the directory browsing was allowed, ie t
 
 NOT BROWSABLE
 <figure>
-	<img src="/assets/img/objectives/8/7.png">
+	<img src="{{site.baseurl}}/assets/img/objectives/8/7.png">
 	<figcaption>UPDATE</figcaption>
 </figure>
 <figure>
-	<img src="/assets/img/objectives/8/8.png">
+	<img src="{{site.baseurl}}/assets/img/objectives/8/8.png">
 	<figcaption>UPDATE</figcaption>
 </figure>
 
 BROWSABLE
 <figure>
-	<img src="/assets/img/objectives/8/9.png">
+	<img src="{{site.baseurl}}/assets/img/objectives/8/9.png">
 	<figcaption>UPDATE</figcaption>
 </figure>
 <figure>
-	<img src="/assets/img/objectives/8/10.png">
+	<img src="{{site.baseurl}}/assets/img/objectives/8/10.png">
 	<figcaption>UPDATE</figcaption>
 </figure>
 Picking "dev" was completely random, and it actually confused me.  After some time being frustrated, I just threw in a weird URL and turned out to give me the answer I wanted.  I did not think that the message that was being returned would evaluate the input directory as a variable.
 <figure>
-	<img src="/assets/img/objectives/8/11.png">
+	<img src="{{site.baseurl}}/assets/img/objectives/8/11.png">
 	<figcaption>UPDATE</figcaption>
 </figure>
 <figure>
-	<img src="/assets/img/objectives/8/12.png">
+	<img src="{{site.baseurl}}/assets/img/objectives/8/12.png">
 	<figcaption>UPDATE</figcaption>
 </figure>
 
@@ -110,7 +110,7 @@ curl -v --http2 https://packalyzer.kringlecastle.com/dev/packalyzer_clientrandom
 
 With the SSL Keys, I downloaded a packat capture and used Wireshark to evaluate the SSL.  I found a JSON file with username and password information
 <figure>
-	<img src="/assets/img/objectives/8/13.png">
+	<img src="{{site.baseurl}}/assets/img/objectives/8/13.png">
 	<figcaption>Creds Found</figcaption>
 </figure>
 
@@ -122,20 +122,20 @@ bushy/Floppity_Floopy-flab19283
 
 I logged into the Packalyzer with the credentials from Alabaster.  There is a file with the "super secret packet capture"
 <figure>
-	<img src="/assets/img/objectives/8/14.png">
+	<img src="{{site.baseurl}}/assets/img/objectives/8/14.png">
 	<figcaption>Found Secret Capture</figcaption>
 </figure>
 
 
 Using Wireshark, I found an email from Holly to Alabaster with an attachment
 <figure>
-	<img src="/assets/img/objectives/8/15.png">
+	<img src="{{site.baseurl}}/assets/img/objectives/8/15.png">
 	<figcaption>UPDATE</figcaption>
 </figure>
 
 Copying the attachment to a file and running base64 decode out to  a PDF
 <figure>
-	<img src="/assets/img/objectives/8/16.png">
+	<img src="{{site.baseurl}}/assets/img/objectives/8/16.png">
 	<figcaption>Decpded</figcaption>
 </figure>
 

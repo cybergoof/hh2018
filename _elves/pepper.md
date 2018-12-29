@@ -20,7 +20,7 @@ comments: false
 
 
 <figure>
-	<img src="/assets/img/elves/holly/1.png">
+	<img src="{{site.baseurl}}/assets/img/elves/holly/1.png">
 	<figcaption>NGINX File</figcaption>
 </figure>
 
@@ -32,7 +32,7 @@ There was an attack and a password spray against a tareget.
 
 Doing an ls, I see that there is a "evtx_dump.py" and the event trace file "ho-ho-no.evtx"
 <figure>
-	<img src="/assets/img/elves/pepper/1.png">
+	<img src="{{site.baseurl}}/assets/img/elves/pepper/1.png">
 	<figcaption>Directory Listing</figcaption>
 </figure>
 
@@ -47,7 +47,7 @@ python evtx_dump.py ho-ho-no.evtx > out.txt
 I copy/pasted the info into an editor.  
 
 <figure>
-	<img src="/assets/img/elves/pepper/3.png">
+	<img src="{{site.baseurl}}/assets/img/elves/pepper/3.png">
 	<figcaption>Looking at Output</figcaption>
 </figure>
 
@@ -56,7 +56,7 @@ Looking at the editor, I found the last failed login, and then the very next suc
 Event ID 4625 is a failed login, and 4624 is a success.  There were a couple of options. Ignoring all the "HealthMailbox" logons, I focused in on:
 
 <figure>
-	<img src="/assets/img/elves/pepper/4.png">
+	<img src="{{site.baseurl}}/assets/img/elves/pepper/4.png">
 	<figcaption>Minty User</figcaption>
 </figure>
 

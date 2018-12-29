@@ -21,7 +21,7 @@ layout: compress
             <div class="content">
                 <div class="s-title">
                     <h1>{{ page.title }}</h1>
-                    <a class="btn zoombtn" href="{{site.url}}">
+                    <a class="btn zoombtn" href="{{site.baseurl}}">
                         <i class="fa fa-home"></i>
                     </a>
                 </div>
@@ -29,12 +29,13 @@ layout: compress
                     {% for elf in site.elves %}
                     <ul>
                         <li class="wow fadeInLeft" data-wow-duration="1.5s">
-                            <div><a class="zoombtn" href="{{ elf.url }}">{{ elf.elf-name }}: {{ elf.title }}</a></div>
+                            <div><a class="zoombtn" href="{{site.baseurl}}{{ elf.url }}">{{ elf.elf-name }}: {{
+                                    elf.title }}</a></div>
                             <div>
-                                <img src="{{ site.url }}/assets/img/elves/{{ elf.elf-directory }}/avatar.png" alt="avatar" />
-                                <img src="{{ site.url }}/assets/img/elves/{{ elf.elf-directory }}/question.png" alt="{{ elf.question }}" />
+                                <img src="{{ site.baseurl }}/assets/img/elves/{{ elf.elf-directory }}/avatar.png" alt="avatar" />
+                                <img src="{{ site.baseurl }}/assets/img/elves/{{ elf.elf-directory }}/question.png" alt="{{ elf.question }}" />
                             </div>
-                            <div><a href="{{ elf.url }}" class="btn zoombtn">Read More</a></div>
+                            <div><a href="{{site.baseurl}}{{ elf.url }}" class="btn zoombtn">Read More</a></div>
                         </li>
                     </ul>
                     {% endfor %}
@@ -43,7 +44,7 @@ layout: compress
         </div>
     </header>
     {% include scripts.html %}
-    <script src="{{ site.url }}/assets/js/wow.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/wow.min.js"></script>
     <script type="text/javascript">(new WOW).init();</script>
 </body>
 

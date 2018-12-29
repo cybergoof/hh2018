@@ -30,13 +30,13 @@ Selecting option 2, you can provide and IP address and it will be pinged.  Assum
 This gave me shell:
 
 <figure>
-	<img src="/assets/img/elves/minty/1.png">
+	<img src="{{site.baseurl}}/assets/img/elves/minty/1.png">
 	<figcaption>Shell Success</figcaption>
 </figure>
 
 There is a database called main and a table called "onboard"
 <figure>
-	<img src="/assets/img/elves/minty/1.1.png">
+	<img src="{{site.baseurl}}/assets/img/elves/minty/1.1.png">
 	<figcaption>The Database</figcaption>
 </figure>
 
@@ -46,18 +46,18 @@ There is a database called main and a table called "onboard"
 Seeing a table called "onboard", then use the .schema command to see the columns.
 
 <figure>
-	<img src="/assets/img/elves/minty/2.png">
+	<img src="{{ site.baseurl }}/assets/img/elves/minty/2.png">
 	<figcaption>Tables in the database</figcaption>
 </figure>
 
 Running the select statement, 
 <figure>
-	<img src="/assets/img/elves/minty/2.png">
+	<img src="{{ site.baseurl }}/assets/img/elves/minty/2.png">
 	<figcaption>Running Select Statement</figcaption>
 </figure>
 
 <figure>
-	<img src="/assets/img/elves/minty/3.png">
+	<img src="{{ site.baseurl }}/assets/img/elves/minty/3.png">
 	<figcaption>Running Select Statement</figcaption>
 </figure>
 

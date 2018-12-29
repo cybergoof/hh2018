@@ -18,13 +18,13 @@ comments: false
 
 A quick listing shows that there is a file called ```poem.txt``` in a hidden file called ```.secrets/her/```
 <figure>
-	<img src="/assets/img/elves/tangle/1.png">
+	<img src="{{site.baseurl}}/assets/img/elves/tangle/1.png">
 	<figcaption>Directory Listing</figcaption>
 </figure>
 
 Looking at the poem, it appears that the name of the subject of the poem has been replaced with "NEVERMORE"
 <figure>
-	<img src="/assets/img/elves/tangle/2.png">
+	<img src="{{site.baseurl}}/assets/img/elves/tangle/2.png">
 	<figcaption>The File</figcaption>
 </figure>
 
@@ -32,7 +32,7 @@ Looking at the poem, it appears that the name of the subject of the poem has bee
 The ```.viminfo``` file in the home directory provides a list of previous commands. It could give us some clues.
 
 <figure>
-	<img src="/assets/img/elves/tangle/3.png">
+	<img src="{{site.baseurl}}/assets/img/elves/tangle/3.png">
 	<figcaption>VimInfo</figcaption>
 </figure>
 

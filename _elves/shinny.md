@@ -24,11 +24,11 @@ https://pen-testing.sans.org/blog/2018/12/11/using-gdb-to-call-random-functions
 
 Using nm, got a listing of the functions.
 <figure>
-	<img src="/assets/img/elves/shinny/1.png">
+	<img src="{{site.baseurl}}/assets/img/elves/shinny/1.png">
 	<figcaption>Tables in the database</figcaption>
 </figure>
 <figure>
-	<img src="/assets/img/elves/shinny/2.png">
+	<img src="{{site.baseurl}}/assets/img/elves/shinny/2.png">
 	<figcaption>Tables in the database</figcaption>
 </figure>
 
@@ -36,7 +36,7 @@ The ```winnerwinner``` seems to be the most interesting.
 
 Start GDB and put a break at Main.  Then, did a jump to ```winnerwinner```.  
 <figure>
-	<img src="/assets/img/elves/shinny/3.png">
+	<img src="{{site.baseurl}}/assets/img/elves/shinny/3.png">
 	<figcaption>Tables in the database</figcaption>
 </figure>
 
